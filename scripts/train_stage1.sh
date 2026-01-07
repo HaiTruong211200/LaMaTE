@@ -39,7 +39,7 @@ mkdir -p $output_dir
 cp $0 $output_dir
 
 
-accelerate launch --config_file $config_file $ROOT_DIR/src/run_seq2seq_mt.py \
+torchrun --config_file $config_file $ROOT_DIR/src/run_seq2seq_mt.py \
     --model_name_or_path $model_dir \
     --resume_from_checkpoint ${resume_from_checkpoint:-""} \
     --encoder_layer_num ${encoder_layer_num} \
