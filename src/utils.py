@@ -21,7 +21,7 @@ from transformers import (
     TrainingArguments,
     LlamaTokenizer,
 )
-from transformers.deepspeed import is_deepspeed_zero3_enabled
+# from transformers.deepspeed import is_deepspeed_zero3_enabled
 from collections import defaultdict
 from transformers.trainer_callback import TrainerCallback
 from datasets import concatenate_datasets
