@@ -1060,7 +1060,7 @@ LLAMA_START_DOCSTRING = r"""
     LLAMA_START_DOCSTRING,
 )
 
-class LlamaPretrainedModel(PreTrainedModel):
+class LlamaPreTrainedModel(PreTrainedModel):
     config_class = LlamaConfig
     base_model_prefix = "model"
     supports_gradient_checkpointing = True
@@ -1588,7 +1588,7 @@ class LlamaModelCombineEncoder(LlamaModelEncoder):
         )
     
 
-class LlamaCrossAttDecoder(LlamaPretrainedModel):
+class LlamaCrossAttDecoder(LlamaPreTrainedModel):
     def __init__(self, config):
         super().__init__(config)
         self.padding_idx = config.pad_token_id
